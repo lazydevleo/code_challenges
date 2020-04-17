@@ -11,9 +11,9 @@ public ListNode mergeKLists(ListNode[] lists) {
             if(l!=null)queue.add(l);
         
         
-        ListNode l3 = new ListNode(-1);
+        ListNode l3 = new ListNode(-1); // simple init
         
-        ListNode head = l3; // return l3.next 
+        ListNode head = l3; // return head.next 
             
             
         
