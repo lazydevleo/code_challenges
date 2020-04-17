@@ -1,12 +1,14 @@
 public ListNode mergeKLists(ListNode[] lists) {
         
+        if(lists==null || lists.length == 0) return null;
+        
         PriorityQueue<ListNode> queue = new PriorityQueue<>
                 (Comparator.comparing((ListNode l) ->l.val));
         
        
         for(ListNode l:lists)
             
-            queue.add(l);
+            if(l!=null)queue.add(l);
         
         
         ListNode l3 = new ListNode(-1);
